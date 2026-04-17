@@ -6,8 +6,8 @@ class Config:
     OUTPUT_DIR = os.path.join(PROJECT_ROOT, 'output')
 
     # 数据路径
-    TRAIN_PATH = r'd:\fushi_work\predict_blood_donation\data_blood\blood-train.csv'
-    TEST_PATH = r'd:\fushi_work\predict_blood_donation\data_blood\blood-test.csv'
+    TRAIN_PATH = os.path.join(PROJECT_ROOT, 'data_blood', 'blood-train.csv')
+    TEST_PATH = os.path.join(PROJECT_ROOT, 'data_blood', 'blood-test.csv')
     RESULT_PATH = os.path.join(OUTPUT_DIR, 'blood_prediction_results.csv')
     MODEL_SAVE_PATH = os.path.join(OUTPUT_DIR, 'blood_donation_model.pth')
 
